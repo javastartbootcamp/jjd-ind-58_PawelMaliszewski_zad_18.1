@@ -24,9 +24,11 @@ class Euler2Test {
 
         assertEquals(19544084, euler2.returnFibSumForEvenNumbers(20000000));
     }
+
     @ParameterizedTest(name = "{arguments} expected number for Maximum Fibonacci Value")
-    @CsvSource({"0, 0","2, 3","10, 10","44, 34","10, 30","44, 40","44, 50"
-            ,"44, 80","188, 200","188, 400","798, 1000", })
+
+    @CsvSource({"0, 0", "2, 3", "10, 10", "44, 34", "10, 30", "44, 40", "44, 50",
+            "44, 80", "188, 200", "188, 400", "798, 1000",})
     public void should_Return_Correct_Number_For_SUM_Of_All_Fib_Number_With_Max_Value(long expected, long fibNumber) {
         euler2 = new Euler2();
 
